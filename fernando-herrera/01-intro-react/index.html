@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Cargat React -->
+    <!-- https://gist.github.com/Klerith/b0111f52ba16451d095f38d4c995605b -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <title>ReactApp</title>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <!-- este babel es pq usamos JSX (background) -->
+    <script type="text/babel">
+        const divRoot = document.querySelector('#root');
+        const nombre = 'Guillo';
+        const h1Tag = <h1>Hola, soy {nombre}</h1>;
+        // renderiza el elemento en la raiz del DOM
+        ReactDOM.render(h1Tag, divRoot);
+
+    </script>
+
+</body>
+</html>
