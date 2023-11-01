@@ -8,7 +8,7 @@
 //heroes es default y owners no, por eso están las llaves
 import heroes, {owners} from '../data/heroes';
 
-console.log(owners);
+//console.log(owners);
 
 //Utilizando funciones flecha y destructuring
 //retornar solo un objeto
@@ -16,11 +16,13 @@ const getHeroeById = (id) =>{
     //callback, en cada heroe revisa la condición
     return heroes.find((heroe) => heroe.id === id);
 }
-console.log( getHeroeById(2) );
+//console.log( getHeroeById(2) );
 
 //retornar varios objetos, usar filter
 const getHeroesByOwner = (owner) => {
     return heroes.filter((heroe) => heroe.owner === owner)
 }
-console.log(getHeroesByOwner('DC'));
-console.log(getHeroesByOwner('Marvel'));
+//console.log(getHeroesByOwner('DC'));
+//console.log(getHeroesByOwner('Marvel'));
+
+export {getHeroeById, getHeroesByOwner};
