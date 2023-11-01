@@ -6,7 +6,7 @@
 
 //opción 3 con default y export al final del archivo heroes.js
 //heroes es default y owners no, por eso están las llaves
-import heroes, {owners} from '../src/data/heroes';
+import heroes, {owners} from '../data/heroes';
 
 console.log(owners);
 
