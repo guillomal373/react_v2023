@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const createButton = ({title}) =>{
+const Button = ({title}) =>{
   return (
     <button data-id="123">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -17,8 +17,8 @@ const createButton = ({title}) =>{
 
 root.render(
   <React.Fragment>
-    {createButton({title: 'Button 1'})}
-    {createButton({title: 'Button 2'})}
-    {createButton({title: 'Button 3'})}
+    <Button title='Button 1'></Button>
+    <Button title='Button 2'></Button>
+    <Button title='Button 3'></Button>
   </React.Fragment>
 );
