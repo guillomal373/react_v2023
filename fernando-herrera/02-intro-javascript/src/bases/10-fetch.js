@@ -9,7 +9,7 @@ const peticionGiphiApi = fetch(`https://api.giphy.com/v1/gifs/random?api_key=${a
 //const peticionGiphiApi = fetch(`https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchWord}`);
 
 peticionGiphiApi
-    .then( result=>result.json() )
+    .then( result=>result.json() )//esto es como un arrow function
         .then( ({data}) =>{//promesa anidada, se desestructura pq vienen la llave "data" dentro de "data" es decir {data}
                 console.log(data);
                 //RANDOM returns only one result
