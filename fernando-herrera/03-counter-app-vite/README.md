@@ -8,19 +8,19 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-[!NOTE]
+**_NOTE:_**
 notas
 
-[!TIP]
+**_TIP:_**
 tip
 
-[!IMPORTANT]
+**_IMPORTANT:_**
 important
 
-[!WARNING]
+**_WARNING:_**
 warning 
 
-[!CAUTION]
+**_CAUTION:_**
 caution
  
 1. https://vitejs.dev/
