@@ -1,0 +1,17 @@
+html, body{
+    background-color: #21232A;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+thead tr {
+    background-color: #2393ee;
+    color: #ffffff;
+    text-align: center;
+}
+
+th,td {
+    padding: 12px 15px;
+}
