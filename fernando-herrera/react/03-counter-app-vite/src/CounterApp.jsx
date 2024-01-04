@@ -7,14 +7,18 @@ export const CounterApp = ({
 
     //MI primer Hook
     const [ counter, setCounter ] = useState( value );
-
+    
     //Al estar dentro del FUNCTIONAL COMPONENT, se renderiza en memoria cada vez que se recarga, mejor afuera si no se requiere este renderizado
     const handleAdd = () => {
-        // console.log(event);
-        //opción 1 para sumar al counter
         setCounter( counter +1 );
-        //opcion 2 para sumar al counter
-        //setCounter( (c) => c+1 )
+    }
+
+    const handleSubtract = () => {
+        setCounter( counter -1 );
+    }
+
+    const handleResetValue = () => {
+        setCounter( value );
     }
 
     return (
@@ -23,9 +27,9 @@ export const CounterApp = ({
             <h2>{ value } - { counter }</h2>
 
             {/*EVENTOS  https://es.react.dev/learn/adding-interactivity */}
-            <button onClick={handleAdd}>
-                +1
-            </button>
+            <button onClick={handleAdd}> +1 </button>
+            <button onClick={handleSubtract}> -1 </button>
+            <button onClick={handleResetValue}> Reset </button>
         </>
     )
 };

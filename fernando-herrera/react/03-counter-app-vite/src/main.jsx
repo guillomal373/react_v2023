@@ -9,6 +9,6 @@ import './styles.css';
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
         {/* <App title='Mi primer App en React' subTitle={123} status={true}/> */}
-        <CounterApp value={123}></CounterApp>
+        <CounterApp value={1000}></CounterApp>
     </React.StrictMode>
 );
