@@ -18,12 +18,39 @@ tip
 important
 
 **_WARNING:_**
-
 warning
 
 **_CAUTION:_**
-
 caution
 
 1. <https://vitejs.dev/>
 2. <https://react.dev/>
+
+# TESTING
+
+Unit Testing
+
+- Tipos
+    Pruebas Unitarias: Enfocadas en pequeñas funcionalidades.
+    Pruebas de Integración: Enfocadas en cómo reaccionan varias piezas en conjunto.
+
+- Características
+    1. Fáciles de escribir
+    2. Fáciles de leer
+    3. Confiables
+    4. Rápidas
+    5. Principalmente unitarias
+
+# AAA
+
+- Arrange: Arreglar
+    Se preparan variables, ambiente en general
+- Act: Actuar
+    Acá se llaman métodos, simulan clicks, realizar acciones sobre el paso anterior
+- Assert: Afirmar
+    Observar los resultados, son los esperados o no?
+
+# Configuración ambiente de pruebas
+
+USAREMOS: JEST + React Testing Library
+    Instalando jset "yarn add --dev jest"
