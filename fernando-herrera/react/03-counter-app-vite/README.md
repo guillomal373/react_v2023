@@ -54,3 +54,25 @@ Unit Testing
 
 USAREMOS: JEST + React Testing Library
     Instalando jset "yarn add --dev jest"
+    Además podemos instalar una dependencia de desarrollo(-D) "yarn add -D @types/jest"
+
+### EJEMPLO
+
+```
+describe('Pruebas en DemoComponent', ()=> {
+
+    test('Esta prueba no debe fallar', ()=>{
+        //0...3 pasos para pruebas
+        //1. Inicialización
+        const message1 = 'Hola Mundo';
+        //2. Estímulo
+        const message2 = message1.trim();
+        //3. Observar el comportamiento ... esperado
+        expect( message1 ).toBe(message2);
+    })
+
+})
+
+```
+
+Opciones y documentación en el API de JEST
