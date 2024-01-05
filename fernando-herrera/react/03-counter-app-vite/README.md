@@ -53,8 +53,69 @@ Unit Testing
 # Configuración ambiente de pruebas
 
 USAREMOS: JEST + React Testing Library
-    Instalando jset "yarn add --dev jest"
-    Además podemos instalar una dependencia de desarrollo(-D) "yarn add -D @types/jest"
+
+1. Instalando jset
+```
+yarn add --dev jest"
+```
+
+1.1. en package.json ...
+
+```
+"test": "jest",
+"test-watch": "jest --watchAll"
+```
+
+2. Además podemos instalar una dependencia de desarrollo(-D)
+
+```
+yarn add -D @types/jest
+```
+
+3. Si usamos babel
+
+```
+yarn add --dev babel-jest @babel/core @babel/preset-env
+```
+
+3.1.1. Se debe configurar la versión de babel con la que se va a trabajar creando un archivo en "babel.config.js" en el root del proyecto
+
+```
+module.exports = {
+    presets: [
+        ['@babel/preset-env', {
+            targets: {
+                node: 'current'}
+            }
+        ]
+    ],
+};
+```
+
+3.1.2. O SI ARROJA UN MENSAJE: ""
+cambiar el archivo a nombre babel.config.json:
+```
+{
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "@babel/preset-typescript"
+    ]
+  }
+```
+
+y luego instalar 
+```
+yarn add --dev @babel/preset-typescript
+```
+
+
 
 ### EJEMPLO
 
