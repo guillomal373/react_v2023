@@ -137,3 +137,13 @@ describe('Pruebas en DemoComponent', ()=> {
 ```
 
 Opciones y documentación en el API de JEST
+
+# OTRAS PRUEBAS SOBRE FUNCIONES REALES
+
+1. Para hacer una prueba sobre una función, ésta debe ser exportada:
+"const getUser()..." ---->  "export const getUser()..."
+
+y el archivo "NNN.test.js" debe ser así
+```
+
+```
